@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>COVID Tracker App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <table>
+        <tr>
+          <th>State</th>
+          <th>Country</th>
+          <th>Total cases</th>
+          <th style="padding-left: 20px;">Last date: <span th:utext="${lastDate}"></span></th>
+        </tr>
+        <tr th:each="locationStat : ${locationStats}">
+          <td th:text="${locationStat.state}"></td>
+          <td th:text="${locationStat.country}"></td>
+          <td th:text="${locationStat.latestTotalCases}"></td>
+        </tr>
+      </table>
+</body>
+
+</html>
