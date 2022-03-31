@@ -1,5 +1,5 @@
 # CoronavirusTrackerApplication
-CoronaVirus Tracker Spring App that fetchs the data from an daily updated .SCV 
+CoronaVirus Tracker Spring App that fetchs the data from an daily updated .csv
 
 Default server port: 8082 
 Change the server port in the application.properties located in "/src/main/resources/application.properties"
